@@ -1,6 +1,6 @@
 if __name__ == "__main__":
     """Menentukan pada jam berapa ketika
-        2 benda berpapasan yang berada pada jarak tertentu
+        2 benda akan berpapasan yang sebelumnya berada pada jarak tertentu
         dan bergerak saling mendekati pada jam berangkat yang sama
     """
     import math
