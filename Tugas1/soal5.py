@@ -12,5 +12,5 @@ if __name__ == "__main__":
     # menghitung waktu yang dibutuhkan untuk saling bertabrakan
     waktu_jam = jarak_total/(kec_A + kec_B)
     jam = math.floor(waktu_jam)
-    menit = round((waktu_jam - jam)*60,0)
+    menit = round((waktu_jam - jam)*60,0) # 60 adalah jumlah menit dalam satu jam
     print(f'waktu yang dibutuhkan untuk saling bertabrakan adalah {jam} jam {menit} menit\nsehingga mobil A dan mobil B akan bertabrakan pada pukul 10.12 WIB')
