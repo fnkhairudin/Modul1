@@ -13,7 +13,7 @@ if __name__ == '__main__':
                 print('Buzz', end=' ')
                 continue
             print(i, end= ' ')
-        q1 = input('\n\nDo you want to still try another number (y/n): ')
+        q1 = input('\n\nDo you want to try another number (y/n): ')
         if q1 == 'y':
             print('\nHave Fun!!!')
         else:
