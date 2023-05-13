@@ -12,8 +12,8 @@ if __name__ == '__main__':
             else:
                 n = n*3+1
             print(f'{int(n)}, ', end='')
-        ask2 = input('\nDo you want to play this game again? (y/n): ')
-        if ask2 == 'y':
+        q1 = input('\nDo you want to play this game again? (y/n): ')
+        if q1 == 'y':
             print('okey lets do it! Enter you starting number again!')
         else:
             print('\nsee you again!')
