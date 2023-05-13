@@ -1,15 +1,14 @@
 if __name__ == "__main__":
-    import math
     """mengkonversi jumlah hari tertentu ke dalam bentuk:
         'x' tahun 'y' bulan 'z' minggu 'n' hari
     """
     days_in_week = 7 # hari
     days_in_month = 30 # hari
     days_in_year = 360 # hari
-    number_days = 385 # hari
+    number_days = 485 # hari
 
-    years = math.floor(number_days/days_in_year)
-    months = math.floor((number_days - days_in_year)/days_in_month)
-    weeks = math.floor((number_days - days_in_year - (days_in_month * months))/days_in_week)
-    days = number_days - days_in_year - (days_in_month * months) - weeks
-    print(f'{number_days} hari sama saja nilainya dengan {years} tahun {months} bulan {weeks} minggu {days} hari')
+    years = number_days//days_in_year
+    month = (number_days%days_in_year)//days_in_month
+    weeks = (number_days%days_in_month)//days_in_week
+    days = abs(number_days - (years*days_in_year + month*days_in_month + weeks*days_in_week))
+    print(f'{number_days} hari = {years} tahun {month} bulan {weeks} minggu {days} hari')
