@@ -1,9 +1,9 @@
 if __name__ == '__main__':
     while True:
-        print('\n---------------Collatz Sequence---------------')
+        print('-------------------------Collatz Sequence-------------------------\n')
         n = int(input('Enter your starting number: '))
         if n == 1 or n == 0:
-            print('try another number, please! Or you will get infite looping!!!')
+            print('try another number, please! Or you will get infite looping!!!\n')
             continue
         print(f'{n}, ', end='')
         while n != 1:
@@ -14,7 +14,7 @@ if __name__ == '__main__':
             print(f'{int(n)}, ', end='')
         q1 = input('\nDo you want to play this game again? (y/n): ')
         if q1 == 'y':
-            print('okey lets do it! Enter you starting number again!')
+            print('okey lets do it! Enter you starting number again!\n')
         else:
             print('\nsee you again!')
             break
