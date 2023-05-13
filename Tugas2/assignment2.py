@@ -3,7 +3,7 @@ if __name__ == '__main__':
         print('-------------------------Collatz Sequence-------------------------\n')
         n = int(input('Enter your starting number: '))
         if n == 1 or n == 0:
-            print('try another number, please! Or you will get infite looping!!!\n')
+            print('try another number, please! Or you will get infite loop!!!\n')
             continue
         print(f'{n}, ', end='')
         while n != 1:
