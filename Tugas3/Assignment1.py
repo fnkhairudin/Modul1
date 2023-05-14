@@ -1,5 +1,5 @@
 if __name__ == '__main__':
-    """input your 'message' argument as string"""
+    """input the message argument in string type"""
     def encryptor(message):
         inputMessage = message.upper()    
         import string
