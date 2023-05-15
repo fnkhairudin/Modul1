@@ -3,7 +3,7 @@ if __name__ == '__main__':
     def encryptor(message):
         inputMessage = message.upper()    
         import string
-        alphabet = string.ascii_uppercase + string.ascii_uppercase # supaya ketika index character yg ingin dienkripsikan melebihi 26, maka akan diulang lagi kembali ke character awal, yaitu mulai dari 'A'
+        alphabet = string.ascii_uppercase*2 # supaya ketika index character yg ingin dienkripsikan melebihi 26, maka akan diulang lagi kembali ke character awal, yaitu mulai dari 'A'
         while True:
             print('Your message encrypted into:')
             for i in inputMessage:
