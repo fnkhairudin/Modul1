@@ -30,12 +30,12 @@ if __name__ == '__main__':
     def playerX(dict1):
         #valuesInputX = str(input("which space do you want to choose (Player X): ")) 
         while True:
-            valuesInputX = str(input("which space do you want to choose (Player X): ")) #top-l
+            valuesInputX = str(input("which space do you want to choose (Player X): "))
             if valuesInputX in dict1: # keys 'top-l' in ticDict
                 if ticDict[valuesInputX] != ' ': # mengecek apakah dalam kotak tersebut sudah terisi
                     print('Check your move!')
                 else:
-                    dict1[valuesInputX] = 'X' #ticDict['top-l'] = X ## diganti 'X'
+                    dict1[valuesInputX] = 'X' # updating values
                     printBoard(dict1)
                     break               
             else:
@@ -50,7 +50,7 @@ if __name__ == '__main__':
                     if dict1[valuesInputO] != ' ': # mengecek apakah dalam kotak tersebut sudah terisi
                         print('Check your move!')
                     else:
-                        dict1[valuesInputO] = 'O' #ticDict['top-m'] = 'O' ## diganti 'O'
+                        dict1[valuesInputO] = 'O' # updating values
                         printBoard(dict1)
                         break
                 else:
@@ -65,7 +65,7 @@ if __name__ == '__main__':
         while True:
             # player X
             playerX(ticDict)
-            if ' ' not in dict1.values():
+            if ' ' not in dict1.values(): # jika semua papan permainan sudah terisi maka permainan selesai
                 print('Finished!!')
                 break
 
