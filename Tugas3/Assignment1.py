@@ -1,6 +1,7 @@
 if __name__ == '__main__':
     import string
     def encryptor(message):
+        print('Your message has been encrypted into:')
         alphabet = string.ascii_uppercase
         for i in message.upper():
             if i == ' ':
